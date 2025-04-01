@@ -1,6 +1,6 @@
-import 'package:file_picker/file_picker.dart';
-import 'package:file_picker/src/linux/kdialog_handler.dart';
-import 'package:file_picker/src/linux/qarma_and_zenity_handler.dart';
+import 'package:file_picker_secure/file_picker.dart';
+import 'package:file_picker_secure/src/linux/kdialog_handler.dart';
+import 'package:file_picker_secure/src/linux/qarma_and_zenity_handler.dart';
 
 abstract class DialogHandler {
   factory DialogHandler(String pathToExecutable) {
