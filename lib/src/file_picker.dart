@@ -6,7 +6,7 @@ import 'package:file_picker_secure/src/file_picker_macos.dart';
 import 'package:file_picker_secure/src/file_picker_result.dart';
 import 'package:file_picker_secure/src/linux/file_picker_linux.dart';
 import 'package:file_picker_secure/src/windows/stub.dart'
-    if (dart.library.io) 'package:file_picker/src/windows/file_picker_windows.dart';
+    if (dart.library.io) 'package:file_picker_secure/src/windows/file_picker_windows.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 const String defaultDialogTitle = '';

@@ -2,15 +2,15 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name                  = 'file_picker'
-  s.version               = '0.0.1'
+  s.name                  = 'file_picker_secure'
+  s.version               = '0.0.3'
   s.summary               = 'A flutter plugin to show native file picker dialogs'
   s.description           = <<-DESC
 A flutter plugin to show native file picker dialogs.
                        DESC
-  s.homepage              = 'https://github.com/miguelpruivo/plugins_flutter_file_picker'
+  s.homepage              = 'https://github.com/HimaniThakuriOS/flutter_file_picker_secure'
   s.license               = { :file => '../LICENSE' }
-  s.author                = 'Miguel Ruivo'
+  s.author                = 'Himani Thakur'
   s.source                = { :path => '.' }
   s.source_files          = 'Classes/**/*'
   s.public_header_files   = 'Classes/**/*.h'
