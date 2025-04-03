@@ -3,7 +3,7 @@ description: A package that allows you to use a native file explorer to pick sin
 homepage: https://github.com/HimaniThakuriOS/plugins_flutter_file_picker_secure
 repository: https://github.com/HimaniThakuriOS/flutter_file_picker_secure
 issue_tracker: https://github.com/HimaniThakuriOS/flutter_file_picker_secure/issues
-version: 0.0.2
+version: 0.0.3
 
 dependencies:
   flutter:
