@@ -2,6 +2,6 @@
 
 * initial release.
 
-## 0.0.2
+## 0.0.4
 
 * Compatible for latest flutter 3.41

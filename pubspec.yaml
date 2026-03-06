@@ -1,7 +1,8 @@
 name: file_picker_secure
 description: "A new Flutter plugin project."
-version: 0.0.2
-homepage: null
+version: 0.0.4
+homepage: https://github.com/your-username/flutter_file_picker_secure
+repository: https://github.com/your-username/flutter_file_picker_secure
 
 environment:
   sdk: ^3.11.0
