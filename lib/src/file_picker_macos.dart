@@ -1,4 +1,4 @@
-import 'package:file_picker_secure/file_picker.dart';
+import 'package:file_picker_secure/file_picker_secure.dart';
 import 'package:file_picker_secure/src/utils.dart';
 
 class FilePickerMacOS extends FilePicker {

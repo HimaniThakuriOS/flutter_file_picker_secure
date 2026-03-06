@@ -1,4 +1,4 @@
-import 'package:file_picker_secure/file_picker.dart';
+import 'package:file_picker_secure/file_picker_secure.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
