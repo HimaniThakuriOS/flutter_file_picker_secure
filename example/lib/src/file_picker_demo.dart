@@ -1,14 +1,16 @@
-import 'package:file_picker/file_picker.dart';
+import 'package:file_picker_secure/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class FilePickerDemo extends StatefulWidget {
+  const FilePickerDemo({super.key});
+
   @override
-  _FilePickerDemoState createState() => _FilePickerDemoState();
+  FilePickerDemoState createState() => FilePickerDemoState();
 }
 
-class _FilePickerDemoState extends State<FilePickerDemo> {
+class FilePickerDemoState extends State<FilePickerDemo> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final _scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
   final _defaultFileNameController = TextEditingController();
@@ -50,7 +52,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
       ))
           ?.files;
     } on PlatformException catch (e) {
-      _logException('Unsupported operation' + e.toString());
+      _logException('Unsupported operation$e');
     } catch (e) {
       _logException(e.toString());
     }
@@ -81,7 +83,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
         ),
       );
     } on PlatformException catch (e) {
-      _logException('Unsupported operation' + e.toString());
+      _logException('Unsupported operation$e');
     } catch (e) {
       _logException(e.toString());
     } finally {
@@ -102,7 +104,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
         _userAborted = path == null;
       });
     } on PlatformException catch (e) {
-      _logException('Unsupported operation' + e.toString());
+      _logException('Unsupported operation$e');
     } catch (e) {
       _logException(e.toString());
     } finally {
@@ -128,7 +130,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
         _userAborted = fileName == null;
       });
     } on PlatformException catch (e) {
-      _logException('Unsupported operation' + e.toString());
+      _logException('Unsupported operation$e');
     } catch (e) {
       _logException(e.toString());
     } finally {
@@ -237,7 +239,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                     SizedBox(
                       width: 400,
                       child: DropdownButtonFormField<FileType>(
-                        value: _pickingType,
+                        initialValue: _pickingType,
                         icon: const Icon(Icons.expand_more),
                         alignment: Alignment.centerLeft,
                         decoration: InputDecoration(
@@ -246,8 +248,8 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                         items: FileType.values
                             .map(
                               (fileType) => DropdownMenuItem<FileType>(
-                                child: Text(fileType.toString()),
                                 value: fileType,
+                                child: Text(fileType.toString()),
                               ),
                             )
                             .toList(),
@@ -445,12 +447,8 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                                           final bool isMultiPath =
                                               _paths != null &&
                                                   _paths!.isNotEmpty;
-                                          final String name = 'File $index: ' +
-                                              (isMultiPath
-                                                  ? _paths!
-                                                      .map((e) => e.name)
-                                                      .toList()[index]
-                                                  : _fileName ?? '...');
+                                          final String name =
+                                              'File $index: ${isMultiPath ? _paths!.map((e) => e.name).toList()[index] : _fileName ?? '...'}';
                                           final path = kIsWeb
                                               ? null
                                               : _paths!
