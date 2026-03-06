@@ -1,5 +1,5 @@
 name: file_picker_secure
-description: "A new Flutter plugin project."
+description: "A secure Flutter plugin for picking files with platform-specific implementations and enhanced security."
 version: 0.0.4
 homepage: https://github.com/your-username/flutter_file_picker_secure
 repository: https://github.com/your-username/flutter_file_picker_secure
